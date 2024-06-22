@@ -1,0 +1,29 @@
+{
+  "name": "utf-sistema_financeiro",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev src/server.ts --transpile-only --ignore-watch node_modules --respawn"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "reflect-metadata": "^0.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.5.2"
+  }
+}
