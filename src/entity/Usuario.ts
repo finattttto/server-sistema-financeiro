@@ -1,10 +1,8 @@
 import { Entity, Column, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
+import { GenericEntity } from "./GenericEntity";
 
 @Entity()
-export class Usuario {
-
-    @PrimaryGeneratedColumn()
-    id: number;
+export class Usuario extends GenericEntity {
 
     @Column({default: '', nullable: true})
     nome: string;
