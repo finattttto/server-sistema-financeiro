@@ -1,10 +1,8 @@
-import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Entity, Column } from "typeorm";
+import { GenericEntity } from "./GenericEntity";
 
 @Entity()
-export class Cliente {
-
-    @PrimaryGeneratedColumn()
-    id: number;
+export class Cliente extends GenericEntity {
 
     @Column({default: '', nullable: true})
     nome: string;
