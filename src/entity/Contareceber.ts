@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 import { GenericEntity } from "./GenericEntity";
 
 @Entity()
-export class ContaReceber extends BaseEntity {
+export class ContaReceber extends GenericEntity {
 
     @Column({default: '', nullable: true})
     clienteId: number;
