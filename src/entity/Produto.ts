@@ -2,7 +2,7 @@ import { Entity, Column, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
 import { GenericEntity } from "./GenericEntity";
 
 @Entity()
-export class Produto extends BaseEntity {
+export class Produto extends GenericEntity {
 
     @Column({default: '', nullable: true})
     nome: string;
